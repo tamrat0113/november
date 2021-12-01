@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import NameTag from "./components/NameTag";
+import CounterC from "./components/CounterC";
+import CounterF from "./components/CounterF";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NameTag name="Michael Scott" city="Scranton" />
+      <CounterC color="red" />
+      <CounterF color="green" />
     </div>
   );
 }
