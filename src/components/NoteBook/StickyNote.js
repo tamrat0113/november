@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 
-function StickyNote({ owner, mode }) {
+import NotebookContext from "./../../context/NotebookContext";
+
+function StickyNote() {
+  const { owner, mode } = useContext(NotebookContext);
+
   return (
     <div style={{ border: "1px solid blue" }}>
       the sticky note Author: {owner} {mode}

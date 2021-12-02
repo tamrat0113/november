@@ -8,12 +8,18 @@ import Users from "./components/Users";
 
 import NoteBook from "./components/NoteBook/NoteBook";
 
+import NotebookContext from "./context/NotebookContext";
+
 function App() {
   return (
     <div className="App">
       <h1>The App</h1>
-      <NoteBook owner="Dwight" mode="light" />
-      <button>Toggle dark mode</button>
+
+      <NotebookContext.Provider value={{ owner: "Dwight", mode: "light" }}>
+        <NoteBook />
+        <button>Toggle dark mode</button>
+      </NotebookContext.Provider>
+
       {/*
       <Users />
       <Feed />
