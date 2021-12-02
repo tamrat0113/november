@@ -2,9 +2,7 @@ import React from "react";
 
 import useFetch from "../hooks/useFetch";
 
-function Spinner() {
-  return <div style={{ background: "red", color: "white" }}>loading...</div>;
-}
+import Spinner from "./Spinner";
 
 function Feed() {
   //   const [posts, setPosts] = useState([]);
